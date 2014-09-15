@@ -1,6 +1,6 @@
 # signature-share
 
-<img src="https://raw.githubusercontent.com/motdotla/signature-share/master/signature-share.gif" alt="signature-gif" align="right" width="200" />
+<img src="https://raw.githubusercontent.com/motdotla/signature-share/master/signature-share.gif" alt="signature-share" align="right" width="200" />
 
 The shareable signing interface for [signature-api](https://github.com/motdotla/signature-api). 
 
