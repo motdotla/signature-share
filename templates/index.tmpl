@@ -1,0 +1,17 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>signature-share</title>
+  <style type="text/css">
+    * {padding: 0; margin: 0;}
+  </style>
+</head>
+<body>
+  <script src='https://rawgit.com/motdotla/signature-document/master/build/signature-document.min.js' data-signature-document-url="{{.url}}"></script>
+  <script>
+    signature_document.bind('fart', function(value) {
+      console.log('fart', value);
+    });
+  </script>
+</body>
+</html>

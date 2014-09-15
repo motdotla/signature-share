@@ -1,0 +1,11 @@
+{
+  "name": "signature-share",
+  "description": "Shareable signing interface for signature-api.",
+  "website": "https://github.com/motdotla/signature-share",
+  "repository": "https://github.com/motdotla/signature-share",
+  "logo": "https://raw.githubusercontent.com/motdotla/signature-share/master/signature-share.gif",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/kr/heroku-buildpack-go.git"
+  } 
+}
+
