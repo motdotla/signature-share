@@ -7,12 +7,6 @@
   </style>
 </head>
 <body>
-  <script src='https://rawgit.com/motdotla/signature-document/master/build/signature-document.min.js' data-signature-document-url="{{.url}}"></script>
-  <script>
-    signature_document.init();
-    signature_document.bind('rendered', function(values) {
-      console.log('rendered', values);
-    });
-  </script>
+  <script src='https://rawgit.com/motdotla/signature-js/master/build/signature-js.min.js' data-signature-document-url="{{.url}}" data-signature-signing-url='http://url.com/signature/url.json'></script>
 </body>
 </html>
