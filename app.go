@@ -8,7 +8,8 @@ import (
 )
 
 type Params struct {
-	Url string `form:"url" json:"url"`
+	DocumentUrl string `form:"document_url" json:"document_url"`
+	SigningUrl  string `form:"signing_url" json:"signing_url"`
 }
 
 func main() {
@@ -21,7 +22,8 @@ func main() {
 }
 
 func Index(params Params, req *http.Request, r render.Render) {
-	_url := params.Url
-	mustaches := map[string]interface{}{"url": _url}
+	document_url := params.DocumentUrl
+	signing_url := params.DocumentUrl
+	mustaches := map[string]interface{}{"document_url": document_url, "signing_url": signing_url}
 	r.HTML(200, "index", mustaches)
 }
