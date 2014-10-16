@@ -20,4 +20,7 @@ go run app.go
 
 Visit a url like <http://localhost:3000/?document_url=http://signature-api.herokuapp.com/api/v0/documents/8abddacd-2bb0-498c-b4f6-e3259d7edb35.json> 
 * where the `document_url` query is a [signature-document blueprint](https://github.com/motdotla/signature-document#signature-document-blueprint)
+
+The signing_url will be auto generated - to create the signing session.
+
 * where the `signing_url` is a [signature-signing blueprint](https://github.com/motdotla/signature-signing#signature-signing-blueprint)
