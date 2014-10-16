@@ -14,6 +14,7 @@ The shareable signing interface for [signature-api](https://github.com/motdotla/
 git clone https://github.com/motdotla/signature-share.git
 cd signature-share
 go get 
+cp .env.example .env
 go run app.go
 ```
 
