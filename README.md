@@ -4,6 +4,7 @@
 
 The shareable signing interface for [signature-api](https://github.com/motdotla/signature-api). 
 
+
 ## Installation
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
@@ -24,3 +25,5 @@ Visit a url like <http://localhost:3000/?document_url=http://signature-api.herok
 The signing_url will be auto generated - to create the signing session.
 
 * where the `signing_url` is a [signature-signing blueprint](https://github.com/motdotla/signature-signing#signature-signing-blueprint)
+
+<img src="https://raw.githubusercontent.com/motdotla/signature-share/master/signature-share-0.gif" alt="signature-share-0" />
