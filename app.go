@@ -25,6 +25,7 @@ func CrossDomain() martini.Handler {
 type Params struct {
 	DocumentUrl string `form:"document_url" json:"document_url"`
 	SigningUrl  string `form:"signing_url" json:"signing_url"`
+	SigningId   string `form:"signing_id" json:"signing_id"`
 }
 
 type SigningsCreateJson struct {
@@ -66,16 +67,17 @@ func requestSigningsCreate(document_url string) SigningsCreateJson {
 func Index(params Params, req *http.Request, r render.Render) {
 	document_url := params.DocumentUrl
 	signing_url := params.SigningUrl
+	signing_id := params.SigningId
 
 	if signing_url != "" {
-		mustaches := map[string]interface{}{"document_url": document_url, "signing_url": signing_url}
+		mustaches := map[string]interface{}{"document_url": document_url, "signing_url": signing_url, "signing_id": signing_id}
 		r.HTML(200, "index", mustaches)
 	} else {
 		signings_create_json := requestSigningsCreate(document_url)
 		signing_id := signings_create_json.Signings[0].Id
 		created_signing_url := SIGNATURE_API_ROOT + "/api/v0/signings/" + signing_id + ".json"
 
-		r.Redirect("/?document_url=" + document_url + "&signing_url=" + created_signing_url)
+		r.Redirect("/?document_url=" + document_url + "&signing_url=" + created_signing_url + "&signing_id=" + signing_id)
 	}
 }
 
