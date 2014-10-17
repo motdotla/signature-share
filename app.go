@@ -15,13 +15,6 @@ var (
 	SIGNATURE_API_ROOT string
 )
 
-func CrossDomain() martini.Handler {
-	return func(res http.ResponseWriter) {
-		res.Header().Add("Access-Control-Allow-Origin", "*")
-		res.Header().Add("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-	}
-}
-
 type Params struct {
 	DocumentUrl string `form:"document_url" json:"document_url"`
 	SigningUrl  string `form:"signing_url" json:"signing_url"`
@@ -41,7 +34,7 @@ func main() {
 
 	m := martini.Classic()
 	m.Use(render.Renderer())
-	m.Use(CrossDomain())
+	m.Use(martini.Static("assets"))
 
 	m.Any("/", binding.Bind(Params{}), Index)
 
