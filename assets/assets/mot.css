@@ -1,0 +1,110 @@
+/* mot | http://mot.la */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, sans-serif;
+  border: 33px solid white;
+  background-color: white;
+  text-align: center;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 620px;
+  text-align: left;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid gray;
+  height: 1px;
+  margin: 1.2em 0 1.2em 0;
+}
+
+h1 {
+  margin: 0.4em 0 1.3em 0;
+}
+
+p {
+  line-height: 1.4em;
+  margin: 0.9em 0 0.9em 0;
+}
+
+blockquote {
+  font-size: 0.8em;
+  font-style: italic;
+  padding: 0 20px 0 20px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+pre {
+  padding: 16px;
+  overflow: auto;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  margin-bottom: 16px;
+  font: monospace;
+  display: block;
+}
+
+h2 {
+  line-height: 1.2em;
+  margin: 0.4em 0 0.4em 0;
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 0.8em;
+  margin: 0.4em 0 0.4em 0;
+}
+
+time {
+  background: black;
+  color: white;
+  font-size: 0.8em;
+}
+
+img {
+  outline: 0; 
+  max-width: 100%; 
+  height: auto;
+}
+
+ul {
+  margin: 0 0 0 1.2em;
+}
+
+ul li {
+  padding-bottom: 4px;
+}
+
+footer {
+  text-align: right;
+  border-top: 40px solid white;
+  font-size: 0.8em;
+}
+
+footer a {
+}
+
+ul.kook {
+  margin: 0;
+}
+
+.kook li {
+  display: inline-block;
+  line-height: 0;
+  list-style: none;
+}
+
+.kook li img {
+  width: 200px;
+}
